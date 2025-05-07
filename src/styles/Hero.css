@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 4rem 2rem;
-    background-image: url("images/jewelrybg.jpg");
+    background-image: url("/public/images/jewelrybg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
