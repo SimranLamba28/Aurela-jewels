@@ -1,0 +1,79 @@
+.news-Section{
+    background-color: var(--bg-dark);
+    padding: 2rem 1rem;
+    font-family: var(--font-body);
+    color: var(--text-dark);
+}
+
+.news-section-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.news-Section p {
+    color: var(--text-muted);
+    font-size: 1.0rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    line-height: 1rem;
+}
+
+.newsForm {
+    gap: 0.50rem;
+    flex-wrap: nowrap;
+}
+
+.email-input {
+    min-width: 220px;
+    padding: 0.65rem 1.2rem;
+    border: 1px solid var(--border-light);
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-input::placeholder{
+    color: var(--text-muted);
+}
+
+.email-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(199, 161, 122, 0.2);
+}
+
+.news-btn {
+    background-color: transparent;
+    font-weight: 600;
+    padding: 0.85rem 2rem;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.news-btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: #fff;
+}
+
+/*responsive*/
+@media (max-width: 576px) {
+    .news-section-title {
+        font-size: 1.5rem;
+    }
+    .news-Section p {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
+    .email-input {
+        font-size: 0.9rem;
+    }
+    .news-btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+    }
+}

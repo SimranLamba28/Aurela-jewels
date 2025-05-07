@@ -1,0 +1,28 @@
+.toast-container {
+    z-index: 1055;
+}
+
+.toast {
+    background: var(--toast-bg);
+    color: var(--text-dark);
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    font-family: var(--font-body);
+    animation: slideUpFade 0.4s ease-in-out;
+}
+
+.toast-body {
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+@keyframes slideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}

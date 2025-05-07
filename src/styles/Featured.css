@@ -1,0 +1,148 @@
+.featured-section {
+  background-color: var(--featured-section-bg);
+}
+
+.featured-heading {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  color: var(--featured-title);
+}
+
+.featured-card {
+  background-color: var(--featured-card-bg);
+  border-radius: 1000px 1000px 0 0;
+  height: 250px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+}
+
+.featured-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.featured-info {
+  text-align: center;
+  padding: 0 0.8rem;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-info h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: var(--font-heading);
+  color: var(--featured-info-title);
+  margin-bottom: 0.2rem;
+  min-height: 1.2rem;
+}
+
+.featured-info p {
+  font-size: 0.8rem;
+  color: var(--featured-info-text);
+  margin-bottom: 0.6rem;
+  min-height: 1rem;
+}
+
+.add-to-bag-btn {
+  background: none;
+  border: 1px solid var(--featured-bag-border);
+  color: var(--featured-bag-color);
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.add-to-bag-btn:hover {
+  background-color: var(--featured-bag-hover-bg);
+  color: var(--featured-bag-hover-color);
+}
+
+.product-badge{
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--badge-border);
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-family: var(--font-heading);
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.4);
+}
+
+/*responsive*/
+@media (min-width: 768px) and (max-width: 991px){
+  .featured-heading{
+    font-size: 2rem;
+  }
+  .featured-card {
+    max-width: 180px;
+    height: 230px;
+  }
+  .featured-img {
+    width: 80px;
+    height: 80px;
+  }
+  .featured-info{
+    min-height: 90px;
+  }
+  .featured-info h5{
+    font-size: 0.85rem;
+    min-height: 1.2rem;
+  }
+  .featured-info p {
+    font-size: 0.75rem;
+    min-height: 1rem;
+  }
+  .add-to-bag-btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .featured-heading{
+    font-size: 1.8rem;
+  }
+  .featured-card {
+    max-width: 150px;
+    height: 210px;
+  }
+  .featured-img {
+    width: 70px;
+    height: 70px;
+  }
+  .featured-info h5 {
+    font-size: 0.75rem;
+  }
+  .featured-info p {
+    font-size: 0.7rem;
+  }
+  .add-to-bag-btn {
+    font-size: 0.65rem;
+  }
+  .product-badge {
+    font-size: 0.5rem;
+    padding: 1px 6px;
+  }
+}

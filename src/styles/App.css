@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #c7a17a;
+  --bg-light: #f7f3f0;     
+  --bg-dark: #fffaf5;
+  --text-dark: #2d2d2d;
+  --text-muted: #8a7e72;
+  --accent-color: #e63946;
+  --border-light: #e0dcd7;
+
+  --font-logo: 'Brillant', serif;
+  --font-heading: 'Bodoni Moda', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --hero-overlay: rgba(0, 0, 0, 0.4); 
+  --button-hover-bg: var(--primary-color);
+  --button-hover-color: #fff;
+
+  --featured-card-bg: #fbe5d3;
+  --featured-section-bg: #fdf9f6;
+  --featured-title: #2b2b2b;
+  --featured-info-title: #3c2a2a;
+  --featured-info-text: #7b6e6e;
+  --featured-bag-border: #dfbfb2;
+  --featured-bag-color: #7d5d5d;
+  --featured-bag-hover-bg: #f2d4c3;
+  --featured-bag-hover-color: #4c3b3b;
+  --badge-bg: #f8f1e9;
+  --badge-text: #b8895c;
+  --badge-border: #e2cdb3;
+
+  --toast-bg: linear-gradient(135deg, #faeadc, #f2d4c3);
+}
+@font-face {
+  font-family: "Brillant";
+  src: url("../assets/fonts/Brillant/brillant.regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-dark);
+}

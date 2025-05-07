@@ -1,0 +1,44 @@
+.accordion-item {
+    background-color: var(--bg-light);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header{
+    font-family: var(--font-heading);
+}
+
+.accordion-button {
+    padding: 1rem 1.5rem;
+    background-color: var(--bg-dark);
+    transition: background-color 1.5s ease, color 0.3s ease;
+    font-family: var(--font-heading);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(199, 161, 122, 0.3);
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg-dark);
+    color: var(--primary-color);
+}
+
+.accordion-button:hover {
+    background-color: var(--featured-bag-hover-bg);
+    color: var(--primary-color);
+}
+
+.accordion-body {
+    font-size: 0.90rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--bg-dark);
+    border-top: 1px solid var(--border-light);
+}
