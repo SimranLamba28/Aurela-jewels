@@ -69,7 +69,7 @@ Follow these steps to set up and run the project locally:
 ### 1. Clone the Repository
 ```
 git clone https://github.com/Simranlamba28/Aurela-jewels.git
-cd jewelbox
+cd Aurela-jewels
 ```
 
 ### 2. Install Dependencies
